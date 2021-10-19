@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(215, 243, 248);
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}

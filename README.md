@@ -1,2 +1,2 @@
-# goit-markup-hw-02
-second HW from GoIT
+# goit-markup-hw-01
+irinasaba.github.io/goit-markup-hw-01/
