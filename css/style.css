@@ -1,3 +1,7 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
 body {
   background-color: rgb(215, 243, 248);
 }
