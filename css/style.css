@@ -21,6 +21,12 @@ a {
   border: 1px solid #ececec;
 }
 
+.header__button {
+  background-image: url('../images/Bg.jpg');
+  width: 1600px;
+  height: 600px;
+}
+
 .header__info-first {
   display: flex;
   justify-content: space-around;
@@ -76,7 +82,7 @@ a {
   padding: 10px;
 }
 .footer__contacts {
-  background-image: url(./images/Bg.jpg);
+  background-image: url('../images/Bg.jpg');
   width: 1600px;
   height: 252px;
 }
