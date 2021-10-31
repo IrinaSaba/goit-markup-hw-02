@@ -1,23 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --primary-text-color: #212121;
+  --spetial-color: #2196f3;
+  --color-grey: #757575;
+  --color-white: #ffffff;
+  --color-of-details: #ececec;
+  --color-background: #f5f4fa;
+  --color-contact: #999999;
+}
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
+  color: var(--primary-text-color);
   width: 1600px;
   margin: auto;
 }
-li {
+.list {
   list-style-type: none;
 }
-a {
+.link {
   text-decoration: none;
 }
-.page-header {
-  height: 80px;
+.grey {
+  color: var(--color-grey);
 }
-.header__info-first {
-  display: inline;
+.white {
+  color: var(--color-white);
+}
+.page-header {
+  padding: 26px 215px;
+  border-bottom: solid 1px var(--color-of-details);
 }
 .header__info-first > ul {
   display: inline;
+}
+.studio,
+.portfolio,
+.contact {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header__site-nav,
+.header__contact {
+  padding: 0;
 }
 .header__site-nav li,
 .header__contact li {
@@ -27,58 +61,52 @@ a {
 .logo {
   font-size: 26px;
   font-family: 'Raleway', sans-serif;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   font-weight: 700;
-  line-height: 30.52px;
-  padding-left: 215px;
+  line-height: 1.15;
   padding-right: 68px;
 }
 .contact {
   padding-right: 201px;
 }
-.studio:hover,
-.portfolio:hover,
-.contact:hover,
-.email:hover,
-.telephone:hover {
-  color: #2196f3;
+.header__site-nav .link:hover,
+.header__contact .link:hover,
+.header__site-nav .link:focus,
+.header__contact .link:focus {
+  color: var(--spetial-color);
 }
 .header__button {
   height: 600px;
   background-image: url('/images/Bg.jpg');
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 6%;
-}
-.header__button h1 {
-  display: block;
-  padding: 200px 452px 30px;
+  letter-spacing: 0.06em;
 }
 .header__button-title {
-  width: 696px;
-  height: 120px;
-  color: #ffffff;
+  display: block;
+  padding: 200px 452px 30px;
+  margin: 0;
+  color: var(--color-white);
   text-align: center;
   margin: 0;
   font-size: 44px;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 1.36;
 }
 .header__button-button {
   padding: 10px 32px 10px;
-  color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--spetial-color);
   border-radius: 4px;
   margin: 0;
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.87;
+  cursor: pointer;
 }
 .main__details {
   width: 1170px;
   height: 101px;
-  padding-left: 215px;
-  padding-right: 215px;
+  margin: 94px 215px 0 215px;
+  padding: 0;
 }
 
 .main__details li {
@@ -91,21 +119,188 @@ a {
 }
 .main__details-info > h3 {
   padding-bottom: 10px;
-  padding-top: 94px;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 .main__details-info > p {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+}
+.work {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.workers {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.grey .workers {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.main__information-photo {
+  text-align: center;
+  margin-bottom: 94px;
+}
+.main__information-photo li {
+  display: inline;
+}
+.middle {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.main__information-teachers {
+  background-color: var(--color-background);
+  padding: 0;
+  margin: 0;
+}
+.main__information-teachers-photo {
+  padding: 0;
+  margin: 0;
+}
+.main__information-teachers-photo li {
+  display: inline-block;
+}
+.block {
+  width: 270px;
+  height: 368px;
+  margin-bottom: 94px;
+  background-color: var(--color-background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.main__information-teachers-photo {
+  margin-left: 215px;
+}
+.second {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 0;
+}
+.thirds {
+  margin-right: 30px;
+}
+.footer {
+  background-image: url('/images/Bg.jpg');
+  padding-top: 60px;
+  padding-left: 215px;
+}
+.logo-footer {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-top: 20px;
+}
+.tel {
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.whitening {
+  color: var(--color-contact);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.main__portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.main__portfolio-nav {
+  padding-bottom: 50px;
+  margin: 0;
+  text-align: center;
+}
+.main__portfolio-nav li {
+  display: inline;
+}
+.main__portfolio-nav-button {
+  padding: 4px;
+}
+.button__nav {
+  background: var(--color-background);
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  cursor: pointer;
+}
+.button__nav:hover,
+.button__nav:focus {
+  background-color: var(--spetial-color);
+  border: none;
+}
+.main__information-project-details {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.main__information-project-details li {
+  display: inline-block;
+  width: 370px;
+  height: 404px;
+  background: var(--color-white);
+  border: 1px solid var(--color-of-details);
+}
+.detail {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  padding: 4px 24px 20px;
+  margin: 0;
+}
+.main__information-project-detail > h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-left: 24px;
+  margin: 0;
+}
+.firsts,
+.four,
+.seven {
+  margin: 0 30px 30px 15px;
+}
+.seconds,
+.five,
+.eight {
+  margin: 0 30px 30px 0;
+}
+.third,
+.six,
+.nine {
+  margin: 0 15px 30px 0;
 }
