@@ -77,7 +77,7 @@ body {
 }
 .header__button {
   height: 600px;
-  background-image: url('./images/Bg.jpg');
+  background-image: url('/images/Bg.jpg');
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -200,7 +200,7 @@ body {
   margin-right: 30px;
 }
 .footer {
-  background-image: url('./images/Bg.jpg');
+  background-image: url('/images/Bg.jpg');
   padding-top: 60px;
   padding-left: 215px;
 }
