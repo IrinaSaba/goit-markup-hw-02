@@ -269,6 +269,8 @@ body {
 .main__information-project-details {
   padding: 0;
   margin-left: 215px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .main__information-project-details li {
   display: inline-block;
@@ -296,7 +298,7 @@ body {
 .firsts,
 .four,
 .seven {
-  margin: 0 30px 30px 15px;
+  margin: 0 30px 30px 0;
 }
 .seconds,
 .five,
@@ -306,5 +308,5 @@ body {
 .third,
 .six,
 .nine {
-  margin: 0 15px 30px 0;
+  margin: 0 0 30px 0;
 }
