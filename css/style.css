@@ -268,7 +268,7 @@ body {
 }
 .main__information-project-details {
   padding: 0;
-  margin: 0;
+  margin-left: 215px;
 }
 .main__information-project-details li {
   display: inline-block;
