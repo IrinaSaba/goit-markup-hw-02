@@ -13,7 +13,8 @@ html {
   --color-white: #ffffff;
   --color-of-details: #ececec;
   --color-background: #f5f4fa;
-  --color-contact: #999999;
+  --color-image: #2f303a;
+  --color-footer-contact: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -75,9 +76,17 @@ body {
 .header__contact .link:focus {
   color: var(--spetial-color);
 }
+.email,
+.telephone {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 .header__button {
   height: 600px;
-  background-image: url('/images/Bg.jpg');
+  background-color: var(--color-image);
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -142,20 +151,14 @@ body {
   padding-bottom: 50px;
   margin: 0;
 }
-
 .workers {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.grey .workers {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
+
 .main__information-photo {
   text-align: center;
   margin-bottom: 94px;
@@ -167,6 +170,7 @@ body {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .main__information-teachers {
   background-color: var(--color-background);
   padding: 0;
@@ -200,7 +204,7 @@ body {
   margin-right: 30px;
 }
 .footer {
-  background-image: url('/images/Bg.jpg');
+  background-color: var(--color-image);
   padding-top: 60px;
   padding-left: 215px;
 }
@@ -225,7 +229,7 @@ body {
 }
 
 .whitening {
-  color: var(--color-contact);
+  color: var(--color-footer-contact);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -260,11 +264,11 @@ body {
 .button__nav:focus {
   background-color: var(--spetial-color);
   border: none;
+  color: var(--color-white);
 }
 .main__information-project-details {
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 .main__information-project-details li {
   display: inline-block;
