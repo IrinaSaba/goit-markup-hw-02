@@ -68,13 +68,14 @@ body {
   padding-right: 68px;
 }
 .contact {
-  padding-right: 201px;
+  margin-right: 201px;
 }
 .header__site-nav .link:hover,
 .header__contact .link:hover,
 .header__site-nav .link:focus,
 .header__contact .link:focus {
   color: var(--spetial-color);
+  border-bottom: 1px solid var(--spetial-color);
 }
 .email,
 .telephone {
@@ -110,6 +111,7 @@ body {
   font-weight: 700;
   line-height: 1.87;
   cursor: pointer;
+  color: var(--color-white);
 }
 .main__details {
   width: 1170px;
