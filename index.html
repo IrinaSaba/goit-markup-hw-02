@@ -13,89 +13,101 @@
 </head>  
 <body>
    <header class="page-header">
-      <nav class="header__info-first">
-         <a class="logo link" href="./index.html"><b style="color:#2196F3">Web<span style="color:#000000;">Studio</span></b></a>
-         <ul class="header__site-nav">
-            <li class="list"><a class="header__site-nav link studio" href="./index.html">Студия</a></li>
-            <li class="list"><a class="header__site-nav link portfolio" href="./portfolio.html">Портфолио</a></li>
-            <li class="list"><a class="header__site-nav link contact" href="#contacts">Контакты</a></li>
-         </ul>
-      </nav>   
+      <div class="container page-header-container">
+         <nav class="header__info-first">
+            <a class="logo link" href="./index.html"><b style="color:#2196F3">Web<span style="color:#000000;">Studio</span></b></a>
+            <ul class="header__site-nav">
+               <li class="list"><a class="header__site-nav link studio" href="./index.html">Студия</a></li>
+               <li class="list"><a class="header__site-nav link portfolio" href="./portfolio.html">Портфолио</a></li>
+               <li class="list"><a class="header__site-nav link contact" href="#contacts">Контакты</a></li>
+            </ul>
+         </nav>   
          <div class="header__contact">
             <a class="header__info-first link email grey" href="mailto:info@devstudio.com">info@devstudio.com</a>
             <a class="header__info-first link telephone grey" href="tel:+380961111111">+38 096 111 11 11</a>
          </div>
+      </div>   
    </header>
    <main>
       <section class="header__hero">
-         <h1 class="header__hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-         <button class="header__hero-btn" type="button">Заказать услугу</button>
+         <div class="container">
+            <h1 class="header__hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+            <button class="header__hero-btn" type="button">Заказать услугу</button>
+         </div>   
       </section>   
-      <ul class="main__details section">
-         <li class="main__details-info first list">
-            <h3 class="main__details-info-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-            <p class="grey text">
-               Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-         </li> 
-         <li class="main__details-info second list">
-            <h3 class="main__details-info-title">ПУНКТУАЛЬНОСТЬ</h3>
-            <p class="grey text">
-               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-         </li>   
-         <li class="main__details-info third list">
-            <h3 class="main__details-info-title">ПЛАНИРОВАНИЕ</h3>
-            <p class="grey text">
-               Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-         </li>   
-         <li class="main__details-info list">
-            <h3 class="main__details-info-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-            <p class="grey text">
-               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-         </li> 
-      </ul>     
+      <div class="container section">
+         <ul class="main__details section">
+            <li class="main__details-info list">
+               <h3 class="main__details-info-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+               <p class="grey text">
+                  Идейные соображения, а также начало повседневной работы по формированию позиции.
+               </p>
+            </li> 
+            <li class="main__details-info list">
+               <h3 class="main__details-info-title">ПУНКТУАЛЬНОСТЬ</h3>
+               <p class="grey text">
+                  Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+               </p>
+            </li>   
+            <li class="main__details-info list">
+               <h3 class="main__details-info-title">ПЛАНИРОВАНИЕ</h3>
+               <p class="grey text">
+                  Равным образом консультация с широким активом в значительной степени обуславливает.
+               </p>
+            </li>   
+            <li class="main__details-info list">
+               <h3 class="main__details-info-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+               <p class="grey text">
+                  Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+               </p>
+            </li> 
+         </ul> 
+      </div>     
       <section class="main__information-photo section">
-         <h2 class="work">Чем мы занимаемся</h2>
-         <ul class="main__information-photo-img">
-            <li class="list"><img src="./images/box-1.jpg" alt="руки и компьютер" width="370" ></li>  
-            <li class="list middle"><img src="./images/box-2.jpg" alt="телефон и руки" width="370" ></li>  
-            <li class="list"><img class="pic-third" src="./images/box-3.jpg" alt="планшет и руки" width="370" ></li> 
-         </ul>
+         <div class="container">
+            <h2 class="work">Чем мы занимаемся</h2>
+            <ul class="main__information-photo-img">
+               <li class="list"><img src="./images/box-1.jpg" alt="руки и компьютер" width="370" ></li>  
+               <li class="list"><img src="./images/box-2.jpg" alt="телефон и руки" width="370" ></li>  
+               <li class="list"><img class="pic-third" src="./images/box-3.jpg" alt="планшет и руки" width="370" ></li> 
+            </ul>
+         </div>   
       </section>
       <section class="main__information-teachers section">
-         <h2 class="work">Наша команда</h2>
-         <ul class="main__information-teachers-photo">
-            <li class="list block first">
-               <img src="./images/img-3.jpg" alt="человек в очках улыбается" width="270" >
-               <h3 class="workers">Игорь Демьяненко</h3>
-               <p class="grey workers" lang="en">Product Designer</p>
-            </li>
-            <li class="list block second"> 
-               <img src="./images/img-2.jpg" alt="женщина в очках" width="270" >
-               <h3 class="workers">Ольга Репина</h3>
-               <p class="grey workers" lang="en">Frontend Developer</p>
-            </li>
-            <li class="list block thirds">
-               <img src="./images/img-1.jpg" alt="человек  улыбается" width="270">
-               <h3 class="workers">Николай Тарасов</h3>
-               <p class="grey workers" lang="en">Marketing</p>
-            </li>   
-            <li class="list block">
-               <img src="./images/img.jpg" alt="человек в очках улыбается" width="270" >
-               <h3 class="workers">Михаил Ермаков</h3>
-               <p class="grey workers" lang="en">UI Designer</p>
-            </li>  
-         </ul>    
+         <div class="container">
+            <h2 class="work">Наша команда</h2>
+            <ul class="main__information-teachers-photo">
+               <li class="list block">
+                  <img src="./images/img-3.jpg" alt="человек в очках улыбается" width="270" >
+                  <h3 class="workers title">Игорь Демьяненко</h3>
+                  <p class="grey workers" lang="en">Product Designer</p>
+               </li>
+               <li class="list block"> 
+                  <img src="./images/img-2.jpg" alt="женщина в очках" width="270" >
+                  <h3 class="workers title">Ольга Репина</h3>
+                  <p class="grey workers" lang="en">Frontend Developer</p>
+               </li>
+               <li class="list block">
+                  <img src="./images/img-1.jpg" alt="человек  улыбается" width="270">
+                  <h3 class="workers title">Николай Тарасов</h3>
+                  <p class="grey workers" lang="en">Marketing</p>
+               </li>   
+               <li class="list block">
+                  <img src="./images/img.jpg" alt="человек в очках улыбается" width="270" >
+                  <h3 class="workers title">Михаил Ермаков</h3>
+                  <p class="grey workers" lang="en">UI Designer</p>
+               </li>  
+            </ul>
+         </div>    
       </section>
    </main>
    <footer class="footer" id="contacts">
-      <a class="logo-footer link" href="./index.html"><b style="color:#2196F3">Web<span style="color:#ffffff;">Studio</span></b></a>
-      <address class="address white">г. Киев, пр-т Леси Украинки, 26</address>
-      <a class="link whitening" href="mailto:info@example.com">info@example.com</a>
-      <a class="link whitening tel" href="tel:+380991111111">+38 099 111 11 11</a>
+      <div class="container">
+         <a class="logo-footer link" href="./index.html"><b style="color:#2196F3">Web<span style="color:#ffffff;">Studio</span></b></a>
+         <address class="address white">г. Киев, пр-т Леси Украинки, 26</address>
+         <a class="link whitening email-footer" href="mailto:info@example.com">info@example.com</a>
+         <a class="link whitening tel-footer" href="tel:+380991111111">+38 099 111 11 11</a>
+      </div>   
    </footer>
 </body>
 </html>
