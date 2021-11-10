@@ -1,3 +1,7 @@
+html {
+  max-width: 1600px;
+  margin: auto;
+}
 :root {
   --primary-text-color: #212121;
   --special-color: #2196f3;
@@ -35,7 +39,8 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .grey {
   color: var(--color-contact);
@@ -43,8 +48,41 @@ ul {
 .white {
   color: var(--color-light);
 }
+/* ------------------HEADER----------------------- */
 .page-header {
   border-bottom: solid 1px var(--color-of-details);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+.header__info-first {
+  display: flex;
+}
+.header__site-nav {
+  display: flex;
+  align-items: center;
+}
+.header__contact {
+  display: flex;
+}
+.header__site-nav .list:first-child {
+  margin-left: 93px;
+}
+.header__site-nav .list:not(:last-child) {
+  margin-right: 50px;
+}
+.header__site-nav {
+  margin-right: 331px;
+}
+.logo {
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 1.15;
 }
 .studio,
 .portfolio,
@@ -55,13 +93,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.logo {
-  font-size: 26px;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  line-height: 1.15;
-}
+
 .header__site-nav .link:hover,
 .header__site-nav .link:focus {
   color: var(--special-color);
@@ -76,8 +108,12 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
-
+.email {
+  margin-right: 50px;
+}
+/* ------------------HERO----------------------- */
 .header__hero {
   background-color: var(--color-image);
   letter-spacing: 0.06em;
@@ -130,7 +166,8 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   padding-top: 10px;
-  display: inline-block;
+  display: block;
+  width: 270px;
 }
 .work {
   font-family: Roboto;
@@ -166,6 +203,7 @@ ul {
 .main__information-photo-img .list:not(:last-child) {
   margin-right: 30px;
 }
+/* ------------------TEACHERS----------------------- */
 .main__information-teachers {
   background-color: var(--color-background);
 }
@@ -179,16 +217,28 @@ ul {
 .main__information-teachers-photo .list:not(:last-child) {
   margin-right: 30px;
 }
-
 .block {
   background-color: var(--color-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+/* ------------------PORTFOLIO----------------------- */
+.main__portfolio {
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
 .main__portfolio-nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.main__portfolio-nav .main__portfolio-nav-item:not(:last-child) {
+  margin-right: 8px;
 }
 .btn__nav {
   background: var(--color-background);
@@ -199,6 +249,7 @@ ul {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  padding: 6px 22px;
 }
 .btn__nav:hover,
 .btn__nav:focus {
@@ -206,26 +257,42 @@ ul {
   border: none;
   color: var(--color-light);
 }
-
-.main__information-project-detail {
-  background: var(--color-light);
-  border: 1px solid var(--color-of-details);
-  display: inline-block;
+.main__information-project-details {
+  display: flex;
+  flex-wrap: wrap;
 }
+.main__information-project-details .main__information-project-item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+.main__information-project-details .main__information-project-item:not(:nth-child(n + 6)) {
+  margin-bottom: 30px;
+}
+.main__information-project-item {
+  background: var(--color-light);
+}
+.main__information-project-item-title {
+  padding: 20px 24px 4px;
+}
+
 .detail {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
-.main__information-project-detail-title {
+.main__information-project-item-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.main__information-project-detail-border {
+.main__information-project-item-border {
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
+/* ------------------FOOTER----------------------- */
 .footer {
   background-color: var(--color-image);
   padding-top: 60px;
