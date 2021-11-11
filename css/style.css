@@ -179,6 +179,7 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+/* ------------------TEACHERS----------------------- */
 .workers {
   font-weight: 500;
   font-size: 16px;
@@ -187,8 +188,8 @@ ul {
   letter-spacing: 0.03em;
 }
 .workers-names-type {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .grey.workers {
   text-align: center;
@@ -205,7 +206,6 @@ ul {
 .main__information-photo-img .list:not(:last-child) {
   margin-right: 30px;
 }
-/* ------------------TEACHERS----------------------- */
 .main__information-teachers {
   background-color: var(--color-background);
 }
